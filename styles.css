@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+header, section {
+  background-color: aliceblue;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+img {
+  width: 2.5vw;
+}
+.dropdown-menu {
+  position: relative;
+}
+
+nav, .link-list {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  background-color: antiquewhite;
+  padding: 5px 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.border {
+  border: 5px solid red;
+}
