@@ -1,18 +1,18 @@
 class cssClassToggler{
   constructor(trigger, dropdownItems, cssClass) {
-    this.dropdownTrigger = trigger;
-    this.dropdownItems = dropdownItems;
+    this.toggleTrigger = trigger;
+    this.toggleItems = dropdownItems;
     this.cssClass = cssClass;
     this.toggle();
   }
 
   toggle() {
-    this.dropdownTrigger.addEventListener("click", () => {
+    this.toggleTrigger.addEventListener("click", () => {
 
-      if (this.dropdownItems.classList.contains(this.cssClass)) {
-        this.dropdownItems.classList.remove(this.cssClass);
+      if (this.toggleItems.classList.contains(this.cssClass)) {
+        this.toggleItems.classList.remove(this.cssClass);
       } else {
-        this.dropdownItems.classList.add(this.cssClass);
+        this.toggleItems.classList.add(this.cssClass);
       }
     })
   }
